@@ -11,7 +11,7 @@ import SwiftUI
 struct BillCycleApp: App {
     @Environment(\.scenePhase) var scenePhase
     let persistanceController = PersistenceController.shared
-
+    
     
     var body: some Scene {
         WindowGroup {

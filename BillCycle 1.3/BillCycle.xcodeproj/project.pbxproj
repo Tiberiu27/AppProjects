@@ -17,6 +17,7 @@
 		10A6FA2525D72BA20032629E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6FA2425D72BA20032629E /* ContentView.swift */; };
 		10A6FA2725D72BA30032629E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6FA2625D72BA30032629E /* Assets.xcassets */; };
 		10A6FA2A25D72BA30032629E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6FA2925D72BA30032629E /* Preview Assets.xcassets */; };
+		10BDC0FF25FA5DB200B87509 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDC0FE25FA5DB200B87509 /* RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		10A6FA2625D72BA30032629E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A6FA2925D72BA30032629E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		10A6FA2B25D72BA30032629E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10BDC0FE25FA5DB200B87509 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				10A6FA2225D72BA20032629E /* BillCycleApp.swift */,
 				10A6FA2425D72BA20032629E /* ContentView.swift */,
 				10225D1F25E8393900B4750F /* FilterView.swift */,
+				10BDC0FE25FA5DB200B87509 /* RowView.swift */,
 				1044B9B225E304DD0065C765 /* DetailView.swift */,
 				1044B9AD25E2FF840065C765 /* AddView.swift */,
 				10A6FA2625D72BA30032629E /* Assets.xcassets */,
@@ -160,6 +163,7 @@
 				1044B9B325E304DD0065C765 /* DetailView.swift in Sources */,
 				10A6FA2525D72BA20032629E /* ContentView.swift in Sources */,
 				1044B9AE25E2FF840065C765 /* AddView.swift in Sources */,
+				10BDC0FF25FA5DB200B87509 /* RowView.swift in Sources */,
 				10225D2025E8393900B4750F /* FilterView.swift in Sources */,
 				10225CCF25E4345700B4750F /* BillStruct.swift in Sources */,
 				1044B9A425E2F88F0065C765 /* Main.xcdatamodeld in Sources */,
@@ -293,7 +297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.3.1;
 				DEVELOPMENT_ASSET_PATHS = "\"BillCycle/Preview Content\"";
 				DEVELOPMENT_TEAM = 49XESD2744;
 				ENABLE_PREVIEWS = YES;
@@ -303,7 +307,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.musty.BillCycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -319,7 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.3.1;
 				DEVELOPMENT_ASSET_PATHS = "\"BillCycle/Preview Content\"";
 				DEVELOPMENT_TEAM = 49XESD2744;
 				ENABLE_PREVIEWS = YES;
@@ -329,7 +333,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.musty.BillCycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -7,64 +7,30 @@
 
 import SwiftUI
 
+
 struct FilterView: View {
     var fetchRequest: FetchRequest<Bill>
     @Environment(\.managedObjectContext) var moc
+    @EnvironmentObject var settings: Settings
     var bills: FetchedResults<Bill> { fetchRequest.wrappedValue }
     
     @State private var showingAddView = false
     @Binding var filterNum: Int
     var filterButtonName: String
     
+    @State private var showingSettingsSheet = false
+    
     var body: some View {
         NavigationView {
+
             List {
                 ForEach(bills, id: \.self) { bill in
                     NavigationLink(destination: DetailView(bill: bill)) {
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text("\(bill.title ?? "Unkown title")")
-                                    .font(.title)
-                                
-                                if bill.fixedAmount != 0.0 {
-                                    Text("$\(bill.fixedAmount, specifier: "%g")").labelsHidden()
-                                }
-                            }
-
-                            
-                            Spacer()
-                            
-                            VStack(alignment: .trailing) {
-                                Text(bill.status ?? "Unpaid")
-                                    .font(.title2)
-                                    .foregroundColor(bill.status == AddView.statusTypes[0] ? Color.red : Color.green)
-                                
-                                if bill.status == AddView.statusTypes[1] {
-                                    Text("\(bill.paidDate ?? Date(), style: .date)").labelsHidden()
-                                }
-                            }
-                        }
-                    }
-                    .contextMenu {
-                        Button(action: {
-                            changeStatus(bill)
-                        }) {
-                            Text("Mark as \(bill.status == AddView.statusTypes[0] ? "Paid" : "Unpaid")")
-                        }
-                        
-                        Button(action: {
-                            moc.delete(bill)
-                            PersistenceController.shared.save()
-                        }) {
-                            Text("Delete")
-                            Image(systemName: "trash")
-                                .foregroundColor(.red) //nothing happens
-                        }
+                        RowView(bill: bill)
                     }
                 }
                 .onDelete(perform: removeBill)
             }
-            .id(UUID()) //causes code to crash at first launch next month
             .onAppear(perform: checkDate)
             
             .navigationBarTitle("BillCycle")
@@ -79,18 +45,25 @@ struct FilterView: View {
                 }
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(filterButtonName) {
-                        filterNum += 1
-                        if filterNum > 3 {
-                            filterNum = 1
-                        }
-                        saveSelection()
+                    Button(action: {
+                        showingSettingsSheet = true
+                    }) {
+                        Image(systemName: "gearshape")
                     }
                 }
             }
         }
         .sheet(isPresented: $showingAddView) {
             AddView()
+        }
+        
+        .actionSheet(isPresented: $showingSettingsSheet) {
+            ActionSheet(title: Text("Settings"), buttons: [
+                .default(Text("Show \(filterButtonName)")) { changeFilter() },
+                .default(Text(" \(settings.isEnabled ? "Disable" : "Enable") authentication")) { biometricAuthentication() },
+                .cancel()
+            
+            ])
         }
     }
     
@@ -101,6 +74,14 @@ struct FilterView: View {
         }
         
         PersistenceController.shared.save()
+    }
+    
+    func changeFilter() {
+        filterNum += 1
+        if filterNum > 3 {
+            filterNum = 1
+        }
+        saveSelection()
     }
     
     
@@ -119,20 +100,20 @@ struct FilterView: View {
     func checkDate() {
         migrateFromUserDefaults()
         loadSelection()
-        
         let now  = Date()
         
-        for  bill in bills {
-                let dateComparison = Calendar.current.compare(now, to: bill.paidDate ?? Date(), toGranularity: .month)
-                
-                if dateComparison == .orderedDescending {
-                    bill.status = AddView.statusTypes[0]
-                    bill.paidDate = nil
-                }
+        for bill in bills {
+            let dateComparison = Calendar.current.compare(now, to: bill.paidDate ?? Date(), toGranularity: .month)
+            
+            if dateComparison == .orderedDescending {
+                bill.status = AddView.statusTypes[0]
+                bill.paidDate = nil
+            }
         }
         
         PersistenceController.shared.save()
     }
+    
     
     func migrateFromUserDefaults() {
         if let items = UserDefaults.standard.data(forKey: "Bills") {
@@ -153,6 +134,10 @@ struct FilterView: View {
         }
     }
     
+    func biometricAuthentication() {
+        settings.isEnabled.toggle()
+    }
+    
     func saveSelection() {
         let encoder = JSONEncoder()
         if let encodedSelection = try? encoder.encode(filterNum) {
@@ -171,8 +156,10 @@ struct FilterView: View {
             } else {
                 print("Unable to load data.")
             }
-        }
+        }        
     }
+    
+
     
     init(predicate: NSPredicate, filterNum: Binding<Int>, filterButtonName: String) {
         fetchRequest = FetchRequest<Bill>(entity: Bill.entity(), sortDescriptors: [
