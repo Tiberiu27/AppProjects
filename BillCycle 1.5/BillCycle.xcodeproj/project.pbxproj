@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1019959F26146ED6003330E8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10211A6B2614489A006853A1 /* CloudKit.framework */; };
+		10208B6D261CFD1D00D7CCE3 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10208B6C261CFD1D00D7CCE3 /* RowView.swift */; };
+		10211A162613A5AF006853A1 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10211A152613A5AF006853A1 /* CloudKit.framework */; };
+		10211A1E261442D1006853A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10211A1D261442D1006853A1 /* Assets.xcassets */; };
+		10211A25261442D1006853A1 /* WatchBillCycle Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 10211A24261442D1006853A1 /* WatchBillCycle Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10211A2C261442D1006853A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10211A2B261442D1006853A1 /* ContentView.swift */; };
+		10211A2E261442D1006853A1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10211A2D261442D1006853A1 /* NotificationController.swift */; };
+		10211A30261442D1006853A1 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10211A2F261442D1006853A1 /* NotificationView.swift */; };
+		10211A32261442D1006853A1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10211A31261442D1006853A1 /* ComplicationController.swift */; };
+		10211A34261442D2006853A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10211A33261442D2006853A1 /* Assets.xcassets */; };
+		10211A37261442D2006853A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10211A36261442D2006853A1 /* Preview Assets.xcassets */; };
+		10211A3C261442D2006853A1 /* WatchBillCycle.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 10211A1B261442D0006853A1 /* WatchBillCycle.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10211A4B2614434E006853A1 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1044B9A225E2F88F0065C765 /* Main.xcdatamodeld */; };
+		10211A4F2614435D006853A1 /* PerstistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044B9A625E2F94E0065C765 /* PerstistanceController.swift */; };
+		10211A532614436F006853A1 /* BillCycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6FA2225D72BA20032629E /* BillCycleApp.swift */; };
+		10211A582614443E006853A1 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10211A572614443E006853A1 /* RowView.swift */; };
+		10211A6026144560006853A1 /* BillList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10211A5F26144560006853A1 /* BillList.swift */; };
+		10225CCF25E4345700B4750F /* BillStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10225CCE25E4345700B4750F /* BillStruct.swift */; };
+		10225D2025E8393900B4750F /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10225D1F25E8393900B4750F /* FilterView.swift */; };
+		1044B9A425E2F88F0065C765 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1044B9A225E2F88F0065C765 /* Main.xcdatamodeld */; };
+		1044B9A725E2F94E0065C765 /* PerstistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044B9A625E2F94E0065C765 /* PerstistanceController.swift */; };
+		1044B9AE25E2FF840065C765 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044B9AD25E2FF840065C765 /* AddView.swift */; };
+		1044B9B325E304DD0065C765 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044B9B225E304DD0065C765 /* DetailView.swift */; };
+		109026032618A0A300E98291 /* ActionsAndModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109026022618A0A300E98291 /* ActionsAndModifiers.swift */; };
+		109026052618A0A300E98291 /* ActionsAndModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109026022618A0A300E98291 /* ActionsAndModifiers.swift */; };
+		10A103682621844700FA679B /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044B9AD25E2FF840065C765 /* AddView.swift */; };
+		10A1036E262200D900FA679B /* ChangeStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1036D262200D900FA679B /* ChangeStatusButton.swift */; };
+		10A1036F262200D900FA679B /* ChangeStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1036D262200D900FA679B /* ChangeStatusButton.swift */; };
+		10A10381262201F800FA679B /* ActionsAndModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109026022618A0A300E98291 /* ActionsAndModifiers.swift */; };
+		10A1038B2622177300FA679B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1038A2622177300FA679B /* SearchBar.swift */; };
+		10A1038C2622177300FA679B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1038A2622177300FA679B /* SearchBar.swift */; };
+		10A6FA2325D72BA20032629E /* BillCycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6FA2225D72BA20032629E /* BillCycleApp.swift */; };
+		10A6FA2525D72BA20032629E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6FA2425D72BA20032629E /* ContentView.swift */; };
+		10A6FA2725D72BA30032629E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6FA2625D72BA30032629E /* Assets.xcassets */; };
+		10A6FA2A25D72BA30032629E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6FA2925D72BA30032629E /* Preview Assets.xcassets */; };
+		10B5D8C2261D00C7000019FB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5D8C1261D00C7000019FB /* DetailView.swift */; };
+		10BDC0FF25FA5DB200B87509 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDC0FE25FA5DB200B87509 /* RowView.swift */; };
+		10C96E802614A02900901279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C96E7F2614A02900901279 /* ContentView.swift */; };
+		10C96E822614A02B00901279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C96E812614A02B00901279 /* Assets.xcassets */; };
+		10C96E852614A02B00901279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C96E842614A02B00901279 /* Preview Assets.xcassets */; };
+		10C96E932614A07A00901279 /* BillCycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6FA2225D72BA20032629E /* BillCycleApp.swift */; };
+		10C96E942614A07A00901279 /* PerstistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044B9A625E2F94E0065C765 /* PerstistanceController.swift */; };
+		10C96E992614A08000901279 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1044B9A225E2F88F0065C765 /* Main.xcdatamodeld */; };
+		10C96EA72614A3F600901279 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C96EA62614A3F600901279 /* CloudKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10211A26261442D1006853A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10A6FA1725D72BA20032629E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10211A23261442D1006853A1;
+			remoteInfo = "WatchBillCycle Extension";
+		};
+		10211A3A261442D2006853A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10A6FA1725D72BA20032629E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10211A1A261442D0006853A1;
+			remoteInfo = WatchBillCycle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10211A40261442D2006853A1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				10211A25261442D1006853A1 /* WatchBillCycle Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10211A44261442D2006853A1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				10211A3C261442D2006853A1 /* WatchBillCycle.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10208B6C261CFD1D00D7CCE3 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		10211A132613A584006853A1 /* BillCycle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BillCycle.entitlements; sourceTree = "<group>"; };
+		10211A152613A5AF006853A1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		10211A1B261442D0006853A1 /* WatchBillCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchBillCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10211A1D261442D1006853A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10211A1F261442D1006853A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10211A24261442D1006853A1 /* WatchBillCycle Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchBillCycle Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10211A2B261442D1006853A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10211A2D261442D1006853A1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		10211A2F261442D1006853A1 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		10211A31261442D1006853A1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		10211A33261442D2006853A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10211A36261442D2006853A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10211A38261442D2006853A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10211A39261442D2006853A1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		10211A572614443E006853A1 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		10211A5F26144560006853A1 /* BillList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillList.swift; sourceTree = "<group>"; };
+		10211A6726144896006853A1 /* WatchBillCycle Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchBillCycle Extension.entitlements"; sourceTree = "<group>"; };
+		10211A6B2614489A006853A1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		10225CCE25E4345700B4750F /* BillStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillStruct.swift; sourceTree = "<group>"; };
+		10225D1F25E8393900B4750F /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		1044B9A325E2F88F0065C765 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		1044B9A625E2F94E0065C765 /* PerstistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerstistanceController.swift; sourceTree = "<group>"; };
+		1044B9AD25E2FF840065C765 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		1044B9B225E304DD0065C765 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		109026022618A0A300E98291 /* ActionsAndModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsAndModifiers.swift; sourceTree = "<group>"; };
+		10A1036D262200D900FA679B /* ChangeStatusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeStatusButton.swift; sourceTree = "<group>"; };
+		10A1038A2622177300FA679B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		10A6FA1F25D72BA20032629E /* BillCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A6FA2225D72BA20032629E /* BillCycleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCycleApp.swift; sourceTree = "<group>"; };
+		10A6FA2425D72BA20032629E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10A6FA2625D72BA30032629E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10A6FA2925D72BA30032629E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10A6FA2B25D72BA30032629E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10B5D8C1261D00C7000019FB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		10BDC0FE25FA5DB200B87509 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		10C96E7B2614A02900901279 /* BillCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C96E7F2614A02900901279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10C96E812614A02B00901279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10C96E842614A02B00901279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10C96E862614A02B00901279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C96E872614A02B00901279 /* MacBillCycle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacBillCycle.entitlements; sourceTree = "<group>"; };
+		10C96EA62614A3F600901279 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10211A21261442D1006853A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1019959F26146ED6003330E8 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A6FA1C25D72BA20032629E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10211A162613A5AF006853A1 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C96E782614A02900901279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C96EA72614A3F600901279 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10211A142613A5AF006853A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10C96EA62614A3F600901279 /* CloudKit.framework */,
+				10211A6B2614489A006853A1 /* CloudKit.framework */,
+				10211A152613A5AF006853A1 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10211A1C261442D0006853A1 /* WatchBillCycle */ = {
+			isa = PBXGroup;
+			children = (
+				10211A1D261442D1006853A1 /* Assets.xcassets */,
+				10211A1F261442D1006853A1 /* Info.plist */,
+			);
+			path = WatchBillCycle;
+			sourceTree = "<group>";
+		};
+		10211A28261442D1006853A1 /* WatchBillCycle Extension */ = {
+			isa = PBXGroup;
+			children = (
+				10211A6726144896006853A1 /* WatchBillCycle Extension.entitlements */,
+				10211A2B261442D1006853A1 /* ContentView.swift */,
+				10211A572614443E006853A1 /* RowView.swift */,
+				10211A5F26144560006853A1 /* BillList.swift */,
+				10211A2D261442D1006853A1 /* NotificationController.swift */,
+				10211A2F261442D1006853A1 /* NotificationView.swift */,
+				10211A31261442D1006853A1 /* ComplicationController.swift */,
+				10211A33261442D2006853A1 /* Assets.xcassets */,
+				10211A38261442D2006853A1 /* Info.plist */,
+				10211A39261442D2006853A1 /* PushNotificationPayload.apns */,
+				10211A35261442D2006853A1 /* Preview Content */,
+			);
+			path = "WatchBillCycle Extension";
+			sourceTree = "<group>";
+		};
+		10211A35261442D2006853A1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				10211A36261442D2006853A1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10A103742622014400FA679B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				10A1036D262200D900FA679B /* ChangeStatusButton.swift */,
+				109026022618A0A300E98291 /* ActionsAndModifiers.swift */,
+				10A1038A2622177300FA679B /* SearchBar.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		10A6FA1625D72BA20032629E = {
+			isa = PBXGroup;
+			children = (
+				10A6FA2125D72BA20032629E /* BillCycle */,
+				10211A1C261442D0006853A1 /* WatchBillCycle */,
+				10211A28261442D1006853A1 /* WatchBillCycle Extension */,
+				10C96E7C2614A02900901279 /* MacBillCycle */,
+				10A6FA2025D72BA20032629E /* Products */,
+				10211A142613A5AF006853A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		10A6FA2025D72BA20032629E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10A6FA1F25D72BA20032629E /* BillCycle.app */,
+				10211A1B261442D0006853A1 /* WatchBillCycle.app */,
+				10211A24261442D1006853A1 /* WatchBillCycle Extension.appex */,
+				10C96E7B2614A02900901279 /* BillCycle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10A6FA2125D72BA20032629E /* BillCycle */ = {
+			isa = PBXGroup;
+			children = (
+				10211A132613A584006853A1 /* BillCycle.entitlements */,
+				10A6FA2225D72BA20032629E /* BillCycleApp.swift */,
+				10A6FA2425D72BA20032629E /* ContentView.swift */,
+				10225D1F25E8393900B4750F /* FilterView.swift */,
+				10BDC0FE25FA5DB200B87509 /* RowView.swift */,
+				1044B9B225E304DD0065C765 /* DetailView.swift */,
+				1044B9AD25E2FF840065C765 /* AddView.swift */,
+				10A6FA2625D72BA30032629E /* Assets.xcassets */,
+				10225CCE25E4345700B4750F /* BillStruct.swift */,
+				10A6FA2B25D72BA30032629E /* Info.plist */,
+				1044B9A225E2F88F0065C765 /* Main.xcdatamodeld */,
+				1044B9A625E2F94E0065C765 /* PerstistanceController.swift */,
+				10A103742622014400FA679B /* Helpers */,
+				10A6FA2825D72BA30032629E /* Preview Content */,
+			);
+			path = BillCycle;
+			sourceTree = "<group>";
+		};
+		10A6FA2825D72BA30032629E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				10A6FA2925D72BA30032629E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10C96E7C2614A02900901279 /* MacBillCycle */ = {
+			isa = PBXGroup;
+			children = (
+				10C96E7F2614A02900901279 /* ContentView.swift */,
+				10B5D8C1261D00C7000019FB /* DetailView.swift */,
+				10208B6C261CFD1D00D7CCE3 /* RowView.swift */,
+				10C96E812614A02B00901279 /* Assets.xcassets */,
+				10C96E862614A02B00901279 /* Info.plist */,
+				10C96E872614A02B00901279 /* MacBillCycle.entitlements */,
+				10C96E832614A02B00901279 /* Preview Content */,
+			);
+			path = MacBillCycle;
+			sourceTree = "<group>";
+		};
+		10C96E832614A02B00901279 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				10C96E842614A02B00901279 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10211A1A261442D0006853A1 /* WatchBillCycle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10211A41261442D2006853A1 /* Build configuration list for PBXNativeTarget "WatchBillCycle" */;
+			buildPhases = (
+				10211A19261442D0006853A1 /* Resources */,
+				10211A40261442D2006853A1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10211A27261442D1006853A1 /* PBXTargetDependency */,
+			);
+			name = WatchBillCycle;
+			productName = WatchBillCycle;
+			productReference = 10211A1B261442D0006853A1 /* WatchBillCycle.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		10211A23261442D1006853A1 /* WatchBillCycle Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10211A3D261442D2006853A1 /* Build configuration list for PBXNativeTarget "WatchBillCycle Extension" */;
+			buildPhases = (
+				10211A20261442D1006853A1 /* Sources */,
+				10211A21261442D1006853A1 /* Frameworks */,
+				10211A22261442D1006853A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchBillCycle Extension";
+			productName = "WatchBillCycle Extension";
+			productReference = 10211A24261442D1006853A1 /* WatchBillCycle Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		10A6FA1E25D72BA20032629E /* BillCycle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A6FA2E25D72BA30032629E /* Build configuration list for PBXNativeTarget "BillCycle" */;
+			buildPhases = (
+				10A6FA1B25D72BA20032629E /* Sources */,
+				10A6FA1C25D72BA20032629E /* Frameworks */,
+				10A6FA1D25D72BA20032629E /* Resources */,
+				10211A44261442D2006853A1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10211A3B261442D2006853A1 /* PBXTargetDependency */,
+			);
+			name = BillCycle;
+			productName = BillCycle;
+			productReference = 10A6FA1F25D72BA20032629E /* BillCycle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10C96E7A2614A02900901279 /* MacBillCycle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10C96E8A2614A02B00901279 /* Build configuration list for PBXNativeTarget "MacBillCycle" */;
+			buildPhases = (
+				10C96E772614A02900901279 /* Sources */,
+				10C96E782614A02900901279 /* Frameworks */,
+				10C96E792614A02900901279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacBillCycle;
+			productName = MacBillCycle;
+			productReference = 10C96E7B2614A02900901279 /* BillCycle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10A6FA1725D72BA20032629E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					10211A1A261442D0006853A1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					10211A23261442D1006853A1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					10A6FA1E25D72BA20032629E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					10C96E7A2614A02900901279 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 10A6FA1A25D72BA20032629E /* Build configuration list for PBXProject "BillCycle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10A6FA1625D72BA20032629E;
+			productRefGroup = 10A6FA2025D72BA20032629E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10A6FA1E25D72BA20032629E /* BillCycle */,
+				10211A1A261442D0006853A1 /* WatchBillCycle */,
+				10211A23261442D1006853A1 /* WatchBillCycle Extension */,
+				10C96E7A2614A02900901279 /* MacBillCycle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10211A19261442D0006853A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10211A1E261442D1006853A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10211A22261442D1006853A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10211A37261442D2006853A1 /* Preview Assets.xcassets in Resources */,
+				10211A34261442D2006853A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A6FA1D25D72BA20032629E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A6FA2A25D72BA30032629E /* Preview Assets.xcassets in Resources */,
+				10A6FA2725D72BA30032629E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C96E792614A02900901279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C96E852614A02B00901279 /* Preview Assets.xcassets in Resources */,
+				10C96E822614A02B00901279 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10211A20261442D1006853A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10211A2E261442D1006853A1 /* NotificationController.swift in Sources */,
+				10211A2C261442D1006853A1 /* ContentView.swift in Sources */,
+				10211A6026144560006853A1 /* BillList.swift in Sources */,
+				10211A532614436F006853A1 /* BillCycleApp.swift in Sources */,
+				10211A582614443E006853A1 /* RowView.swift in Sources */,
+				10A10381262201F800FA679B /* ActionsAndModifiers.swift in Sources */,
+				10211A32261442D1006853A1 /* ComplicationController.swift in Sources */,
+				10211A30261442D1006853A1 /* NotificationView.swift in Sources */,
+				10211A4F2614435D006853A1 /* PerstistanceController.swift in Sources */,
+				10211A4B2614434E006853A1 /* Main.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A6FA1B25D72BA20032629E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1044B9A725E2F94E0065C765 /* PerstistanceController.swift in Sources */,
+				1044B9B325E304DD0065C765 /* DetailView.swift in Sources */,
+				10A6FA2525D72BA20032629E /* ContentView.swift in Sources */,
+				10A1036E262200D900FA679B /* ChangeStatusButton.swift in Sources */,
+				1044B9AE25E2FF840065C765 /* AddView.swift in Sources */,
+				10A1038B2622177300FA679B /* SearchBar.swift in Sources */,
+				10BDC0FF25FA5DB200B87509 /* RowView.swift in Sources */,
+				109026032618A0A300E98291 /* ActionsAndModifiers.swift in Sources */,
+				10225D2025E8393900B4750F /* FilterView.swift in Sources */,
+				10225CCF25E4345700B4750F /* BillStruct.swift in Sources */,
+				1044B9A425E2F88F0065C765 /* Main.xcdatamodeld in Sources */,
+				10A6FA2325D72BA20032629E /* BillCycleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C96E772614A02900901279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109026052618A0A300E98291 /* ActionsAndModifiers.swift in Sources */,
+				10208B6D261CFD1D00D7CCE3 /* RowView.swift in Sources */,
+				10C96E802614A02900901279 /* ContentView.swift in Sources */,
+				10A1036F262200D900FA679B /* ChangeStatusButton.swift in Sources */,
+				10B5D8C2261D00C7000019FB /* DetailView.swift in Sources */,
+				10A103682621844700FA679B /* AddView.swift in Sources */,
+				10C96E942614A07A00901279 /* PerstistanceController.swift in Sources */,
+				10A1038C2622177300FA679B /* SearchBar.swift in Sources */,
+				10C96E992614A08000901279 /* Main.xcdatamodeld in Sources */,
+				10C96E932614A07A00901279 /* BillCycleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10211A27261442D1006853A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10211A23261442D1006853A1 /* WatchBillCycle Extension */;
+			targetProxy = 10211A26261442D1006853A1 /* PBXContainerItemProxy */;
+		};
+		10211A3B261442D2006853A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10211A1A261442D0006853A1 /* WatchBillCycle */;
+			targetProxy = 10211A3A261442D2006853A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10211A3E261442D2006853A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchBillCycle Extension/WatchBillCycle Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5.2;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchBillCycle Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 49XESD2744;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchBillCycle Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musty.BillCycle.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		10211A3F261442D2006853A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchBillCycle Extension/WatchBillCycle Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5.2;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchBillCycle Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 49XESD2744;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchBillCycle Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musty.BillCycle.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		10211A42261442D2006853A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5.2;
+				DEVELOPMENT_TEAM = 49XESD2744;
+				IBSC_MODULE = WatchBillCycle_Extension;
+				INFOPLIST_FILE = WatchBillCycle/Info.plist;
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musty.BillCycle.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		10211A43261442D2006853A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5.2;
+				DEVELOPMENT_TEAM = 49XESD2744;
+				IBSC_MODULE = WatchBillCycle_Extension;
+				INFOPLIST_FILE = WatchBillCycle/Info.plist;
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musty.BillCycle.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		10A6FA2C25D72BA30032629E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10A6FA2D25D72BA30032629E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10A6FA2F25D72BA30032629E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BillCycle/BillCycle.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5.2;
+				DEVELOPMENT_ASSET_PATHS = "\"BillCycle/Preview Content\"";
+				DEVELOPMENT_TEAM = 49XESD2744;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BillCycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musty.BillCycle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10A6FA3025D72BA30032629E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BillCycle/BillCycle.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5.2;
+				DEVELOPMENT_ASSET_PATHS = "\"BillCycle/Preview Content\"";
+				DEVELOPMENT_TEAM = 49XESD2744;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BillCycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musty.BillCycle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10C96E882614A02B00901279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacBillCycle/MacBillCycle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.5.4;
+				DEVELOPMENT_ASSET_PATHS = "\"MacBillCycle/Preview Content\"";
+				DEVELOPMENT_TEAM = 49XESD2744;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MacBillCycle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musty.BillCycle;
+				PRODUCT_NAME = BillCycle;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		10C96E892614A02B00901279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacBillCycle/MacBillCycle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.5.4;
+				DEVELOPMENT_ASSET_PATHS = "\"MacBillCycle/Preview Content\"";
+				DEVELOPMENT_TEAM = 49XESD2744;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MacBillCycle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musty.BillCycle;
+				PRODUCT_NAME = BillCycle;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10211A3D261442D2006853A1 /* Build configuration list for PBXNativeTarget "WatchBillCycle Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10211A3E261442D2006853A1 /* Debug */,
+				10211A3F261442D2006853A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10211A41261442D2006853A1 /* Build configuration list for PBXNativeTarget "WatchBillCycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10211A42261442D2006853A1 /* Debug */,
+				10211A43261442D2006853A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10A6FA1A25D72BA20032629E /* Build configuration list for PBXProject "BillCycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A6FA2C25D72BA30032629E /* Debug */,
+				10A6FA2D25D72BA30032629E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10A6FA2E25D72BA30032629E /* Build configuration list for PBXNativeTarget "BillCycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A6FA2F25D72BA30032629E /* Debug */,
+				10A6FA3025D72BA30032629E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10C96E8A2614A02B00901279 /* Build configuration list for PBXNativeTarget "MacBillCycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C96E882614A02B00901279 /* Debug */,
+				10C96E892614A02B00901279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1044B9A225E2F88F0065C765 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1044B9A325E2F88F0065C765 /* Main.xcdatamodel */,
+			);
+			currentVersion = 1044B9A325E2F88F0065C765 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 10A6FA1725D72BA20032629E /* Project object */;
+}
